@@ -1,0 +1,255 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7000 6650 0    50   ~ 0
+1-0: Initial version.
+Text Notes 7350 7500 0    50   ~ 0
+Rocket Launch Controller
+Text Notes 8150 7650 0    50   ~ 0
+28 January 2022
+Text Notes 10600 7650 0    50   ~ 0
+1-0
+$Comp
+L power:+12V #PWR?
+U 1 1 61F4986B
+P 3300 3900
+F 0 "#PWR?" H 3300 3750 50  0001 C CNN
+F 1 "+12V" H 3315 4073 50  0000 C CNN
+F 2 "" H 3300 3900 50  0001 C CNN
+F 3 "" H 3300 3900 50  0001 C CNN
+	1    3300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61F49E29
+P 3300 4700
+F 0 "#PWR?" H 3300 4450 50  0001 C CNN
+F 1 "GND" H 3305 4527 50  0000 C CNN
+F 2 "" H 3300 4700 50  0001 C CNN
+F 3 "" H 3300 4700 50  0001 C CNN
+	1    3300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT?
+U 1 1 61F4A275
+P 3300 4300
+F 0 "BT?" H 3408 4346 50  0000 L CNN
+F 1 "Battery" H 3408 4255 50  0000 L CNN
+F 2 "" V 3300 4360 50  0001 C CNN
+F 3 "~" V 3300 4360 50  0001 C CNN
+	1    3300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_LED SW?
+U 1 1 61F4BB5F
+P 6250 4300
+F 0 "SW?" H 6250 4685 50  0000 C CNN
+F 1 "SW_Push_LED" H 6250 4594 50  0000 C CNN
+F 2 "" H 6250 4600 50  0001 C CNN
+F 3 "~" H 6250 4600 50  0001 C CNN
+	1    6250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST_LED SW?
+U 1 1 61F4C879
+P 5450 4300
+F 0 "SW?" H 5450 4635 50  0000 C CNN
+F 1 "SW_SPST_LED" H 5450 4544 50  0000 C CNN
+F 2 "" H 5450 4600 50  0001 C CNN
+F 3 "~" H 5450 4600 50  0001 C CNN
+	1    5450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 61F4CEA6
+P 4650 4200
+F 0 "SW?" H 4650 4435 50  0000 C CNN
+F 1 "SW_SPST" H 4650 4344 50  0000 C CNN
+F 2 "" H 4650 4200 50  0001 C CNN
+F 3 "~" H 4650 4200 50  0001 C CNN
+	1    4650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61F4DF28
+P 8700 4250
+F 0 "R?" H 8770 4296 50  0000 L CNN
+F 1 "R" H 8770 4205 50  0000 L CNN
+F 2 "" V 8630 4250 50  0001 C CNN
+F 3 "~" H 8700 4250 50  0001 C CNN
+	1    8700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 61F4E830
+P 7250 4200
+F 0 "J?" H 7100 4400 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6800 4300 50  0000 L CNN
+F 2 "" H 7250 4200 50  0001 C CNN
+F 3 "~" H 7250 4200 50  0001 C CNN
+	1    7250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 61F4F3ED
+P 8000 4200
+F 0 "J?" H 8108 4381 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 8108 4290 50  0000 C CNN
+F 2 "" H 8000 4200 50  0001 C CNN
+F 3 "~" H 8000 4200 50  0001 C CNN
+	1    8000 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61F54412
+P 4250 4000
+F 0 "#PWR?" H 4250 3850 50  0001 C CNN
+F 1 "+12V" H 4265 4173 50  0000 C CNN
+F 2 "" H 4250 4000 50  0001 C CNN
+F 3 "" H 4250 4000 50  0001 C CNN
+	1    4250 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61F58FF2
+P 6950 4400
+F 0 "#PWR?" H 6950 4150 50  0001 C CNN
+F 1 "GND" H 6955 4227 50  0000 C CNN
+F 2 "" H 6950 4400 50  0001 C CNN
+F 3 "" H 6950 4400 50  0001 C CNN
+	1    6950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61F5A6AF
+P 5950 4400
+F 0 "#PWR?" H 5950 4150 50  0001 C CNN
+F 1 "GND" H 5955 4227 50  0000 C CNN
+F 2 "" H 5950 4400 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4500 3300 4700
+Wire Wire Line
+	3300 3900 3300 4100
+Text Notes 3050 3600 0    50   ~ 0
+3x 18650 Batteries
+Wire Notes Line
+	3000 3500 4000 3500
+Wire Notes Line
+	4000 3500 4000 5000
+Wire Notes Line
+	4000 5000 3000 5000
+Wire Notes Line
+	3000 5000 3000 3500
+Wire Wire Line
+	4250 4000 4250 4200
+Wire Wire Line
+	4250 4200 4450 4200
+Wire Wire Line
+	4850 4200 5250 4200
+Wire Wire Line
+	5650 4200 5750 4200
+Wire Wire Line
+	6450 4200 6550 4200
+Wire Wire Line
+	7050 4300 6950 4300
+Wire Wire Line
+	6550 4200 6550 4300
+Wire Wire Line
+	6550 4300 6450 4300
+Wire Wire Line
+	6750 4200 7050 4200
+Wire Wire Line
+	5750 4200 5750 4300
+Wire Wire Line
+	5750 4300 5650 4300
+Connection ~ 5750 4200
+Wire Wire Line
+	5750 4200 6050 4200
+Wire Wire Line
+	6050 4300 5950 4300
+Wire Wire Line
+	5950 4300 5950 4400
+Wire Wire Line
+	6950 4300 6950 4400
+Wire Wire Line
+	5250 4300 5150 4300
+Wire Wire Line
+	5150 4300 5150 4800
+Wire Wire Line
+	5150 4800 6750 4800
+Wire Wire Line
+	6750 4800 6750 4200
+Wire Wire Line
+	6750 4200 6550 4200
+Connection ~ 6750 4200
+Connection ~ 6550 4200
+Wire Wire Line
+	8200 4200 8550 4200
+Wire Wire Line
+	8200 4300 8550 4300
+Wire Wire Line
+	8550 4300 8550 4400
+Wire Wire Line
+	8550 4100 8700 4100
+Wire Wire Line
+	8550 4100 8550 4200
+Wire Wire Line
+	8550 4400 8700 4400
+Wire Notes Line
+	7750 3800 8950 3800
+Wire Notes Line
+	8950 3800 8950 4500
+Wire Notes Line
+	8950 4500 7750 4500
+Wire Notes Line
+	7750 4500 7750 3800
+Text Notes 7800 3900 0    50   ~ 0
+Igniter
+Text Notes 5150 4900 0    50   ~ 0
+Low-current path (12mA)
+Text Notes 4150 3600 0    50   ~ 0
+Launch Controller Console
+Text Notes 4550 3800 0    50   ~ 0
+Keyed \nSwitch
+Text Notes 5350 3800 0    50   ~ 0
+Toggle \nSwitch
+Text Notes 6100 3800 0    50   ~ 0
+Momentary \nSwitch
+Text Notes 7050 3800 0    50   ~ 0
+Banana \nJacks
+Wire Notes Line
+	4100 3500 7650 3500
+Wire Notes Line
+	7650 3500 7650 5000
+Wire Notes Line
+	4100 5000 4100 3500
+Wire Notes Line
+	4100 5000 7650 5000
+$EndSCHEMATC
